@@ -1,0 +1,36 @@
+﻿
+@model AfsluttendeProjekt.Models.LoginModelJson
+
+
+<!--look up url /user/login/-->
+
+@{
+    Layout = null;
+}
+
+
+ <!--Css gets weird if public is removed-->
+
+<!DOCTYPE html public>
+<html>
+    <head>
+        <link rel="stylesheet" href="~/Content/loginStyle.css"/>
+    </head>
+
+    <body>
+      <div class="bg-img">
+        <div class="container" id="loginContainer">
+            <h2 id="myHeader">Login</h2>
+            <form action="/User/login" method="post" class="container">
+                <label id="user_N" for="userN">Username:</label>
+                <input type="text" id="UserN" name="UserN"><br><br>
+                <label id="p_Word" for="pWord">Password:</label>
+                <input type="password" id="pWord" name="pWord"><br><br>
+                <input type="submit" value="Login" id="btnLogin">
+            </form>
+            <h4><label id="LoginMessage">@ViewBag.message</label> </h4>
+        </div>
+       </div>
+    </body>
+
+</html>

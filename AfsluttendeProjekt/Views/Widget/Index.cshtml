@@ -1,0 +1,29 @@
+﻿@using AfsluttendeProjekt.Models
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/style.css">
+</head>
+
+<body id="bodyGrid">
+    <div class="grid-container" id="grid1">
+        <div class="grid-item">
+            @{ Html.RenderAction("index", "job");}
+        </div>
+        <div class="grid-item">
+            @{ Html.RenderAction("LowOnItems", "Item");}
+        </div>
+        <div class="grid-item">Not yet implemented</div>
+        <div class="grid-item">Not yet implemented</div>
+
+        <div class="grid-item">
+                @{ Html.RenderAction("RunOnceJob", "JobHistory");}
+        </div>
+
+        <div class="grid-item">Not yet implemented</div>
+        <div class="grid-item">Not yet implemented</div>
+        <div class="grid-item">Not yet implemented</div>
+        <div class="grid-item">Not yet implemented</div>
+    </div>
+</body>
+</html>
